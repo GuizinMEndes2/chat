@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+.tela_login{
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.tela_usuarios{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    box-sizing: border-box;
+    width: 400px;
+    bottom: 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tela_mensagem{
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    box-sizing: border-box;
+    right: 0px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tela_chat{
+    position: absolute;
+    left: 400px;
+    top: 80;
+    box-sizing: border-box;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    border: 1px solid black;
+}
