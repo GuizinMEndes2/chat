@@ -83,7 +83,11 @@
     </div>
     <div class="tela_mensagem">
         <?php if($_SESSION['logado']) { ?>
-        
+            <div id="msg_enviar" class ="informação">Digite abaixo sua mensagem</div>
+        <form onsubmit=" return enviar();">
+            <input class="mensagem">
+            <input type="submit" value="enviar">
+        </form>
         <?php } else { ?>
         
         <?php } ?>

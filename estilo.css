@@ -58,7 +58,16 @@ body{
     padding: 10px;
     border: 1px solid black;
 }
-
+.tela_mensagem .mensagem{
+  position: absolute;
+  left: 2%;
+  width: 85%;
+}
+.tela_mensagem input[type="submit"] {
+    position: absolute;
+    right: 2%;
+    width: 9%;
+}
 .tela_chat{
     position: absolute;
     left: 400px;
