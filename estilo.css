@@ -12,14 +12,35 @@ body{
     top: 0;
     box-sizing: border-box;
     width: 400px;
-    height: 80px;
+    height: 120px;
     padding: 10px;
-    border: 1px solid black;
+}
+.informacao{
+    display: inline-block;
+    position: relative;
+    margin-bottom:5px;
+    width: 100%;
+    text-align: left;
+}
+.informacao .nome{
+    text-align: left;
+    font-weight: bold;
+}
+.informacao .valor{
+    display: inline;
+    position: absolute;
+    right: 0px;
+}
+.tela_login form input[type="submit"]{
+    width: 60%;
+}
+.tela_login form input{
+    text-align: center;
 }
 .tela_usuarios{
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 120px;
     box-sizing: border-box;
     width: 400px;
     bottom: 0;
@@ -33,7 +54,7 @@ body{
     top: 0px;
     box-sizing: border-box;
     right: 0px;
-    height: 80px;
+    height: 120px;
     padding: 10px;
     border: 1px solid black;
 }
@@ -41,7 +62,7 @@ body{
 .tela_chat{
     position: absolute;
     left: 400px;
-    top: 80;
+    top: 120px;
     box-sizing: border-box;
     right: 0px;
     bottom: 0px;
