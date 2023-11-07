@@ -30,7 +30,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="tema_<?=$_SESSION['tema']?>.css">       
     <script src="script_head.js"></script>
@@ -93,7 +92,14 @@
         <?php } ?>
 
     </div>
-    <div class="tela_usuarios">
+    <div id="tela_usuarios" class="tela_usuarios">
+        <!--
+            <div class ="usuario">
+                <div class = "nome">$NOME</div>
+                <div class="login">$LOGIN</div>
+                <div class="online">$ONLINE</div>
+                <div class="
+        -->
     </div>
     <div class="tela_chat">
     </div>
