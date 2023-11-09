@@ -98,7 +98,7 @@
                 <div class = "nome">$NOME</div>
                 <div class="login">$LOGIN</div>
                 <div class="online">$ONLINE</div>
-                <div class="
+            </div>    
         -->
     </div>
     <div class="tela_chat">

@@ -40,18 +40,37 @@ var atualiza = setInterval ( function() {
                 case "ok":
                     if (resposta.mensagens.length > 0) {
                         mensagens.concat(resposta.mensagens);
-
                     }
-                    resposta.usuarios.map(ur => {
-                        if(usuarios.find(u => u.login == ur.login)) {
-                            usuarios[usuarios.findIndex(u => u.login == ur.login)].online = true;
-                        }else {
-                            ur.online = true;
-                          usuarios.push(ur);
+                    if(resposta.mensagens.length > 0) {
+                        resposta.usuarios.map(ur => {
+                        if(!(usuarios.find(u => u.login == ur.login))) {
+                            usuarios.push(ur);
+                            var novo = '<div class ="usuario" id="usuario_'+ur.login+'">';
+                            novo += '<div class="nome">'+ur.nome+'</div>';
+                            novo +='<div class="login">'+ur.login+'</div>';
+                            novo += '<div class="online"></div>';
+                            novo += '</div>';
+                            document.getElementById('tela_usuarios').innerHTML += novo;
+                            novo = '';
                         }
                     });
-                    usuarios = resposta.usuarios;
+                    usuarios.forEach(function(user, index){
+                        let u = resposta.usuarios.find(u => u.login == user.login);
+                        if(u){
+                            u.online = true;
+                            usuarios[index] = u;
+                            document.getElementById('usuario_'+user.login).online = 'true';
+                            document.getElementById('usuario_'+user.login)
+                                .getElementsByClassName('nome').innerHTML = u.nome;
+                        } else {
+                            document.getElementById('usuario_'+user.login).online = 'false';
+                        }
+                    });
+
+                    }
+                    
                     break;
+
         }
 
     });
